@@ -326,7 +326,7 @@ a {
 }
 
 .section-bg {
-  background-image: url("/Images/FreshStart/mika-baumeister-O91CMFew8mY-unsplash.jpg"); /* swap in your image path */
+  background-image: url("FreshStart/mika-baumeister-O91CMFew8mY-unsplash.jpg"); /* swap in your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
