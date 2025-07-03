@@ -24,8 +24,8 @@ Colors*/
   --dark-text-color: #000000;
   /*Neutral Colors*/
   /*Font-Family*/
-  --font-header: "Comic Sans MS", cursive;
-  --font-body: "Fredoka One", cursive;
+  --font-header: "Comic Sans MS";
+  --font-body: "Fredoka One";
   --font-weight-bold: 700;
   /*Font-Family*/
   /*Font-Size*/
