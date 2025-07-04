@@ -18,17 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const elements = document.querySelectorAll('.scroll-fade-in');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
+document.querySelectorAll('.accordion-details').forEach(detail => {
+  detail.addEventListener('toggle', () => {
+    if (detail.open) {
+      document.querySelectorAll('.accordion-details').forEach(other => {
+        if (other !== detail) other.open = false;
       });
-    }, { threshold: 0.1 });
-
-    elements.forEach(el => observer.observe(el));
+    }
   });
+});
+
 
