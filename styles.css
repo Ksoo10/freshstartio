@@ -275,6 +275,10 @@ section {
   color: var(--highlighter-color);
 }
 
+.second-color {
+  color: var(--secondary-color);
+}
+
 /* Border & Effects */
 .border {
   border: 1px solid #ccc;
@@ -936,7 +940,7 @@ h5.service-title::after {
   font-size: 1.1rem;
   font-weight: 600;
   font-family: var(--font-header);
-  color: var(--primary-color);
+  color:var(--secondary-color);
   cursor: pointer;
   list-style: none;
 }
@@ -1106,7 +1110,7 @@ footer.lgt-sec-bk-color {
 }
 
 .social-wrapper a[aria-label="Instagram"] img {
-  width: 26px;
+  width: 20px;
   height: 26px;
 }
 
@@ -1319,6 +1323,15 @@ footer.lgt-sec-bk-color {
 
   .text-large {
     text-align: center;
+  }
+
+  .info-title {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+
+  .item-card a {
+    font-size: 0.85rem;
   }
 
   .flex-wrapper-center {
