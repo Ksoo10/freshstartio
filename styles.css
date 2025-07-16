@@ -368,7 +368,7 @@ a.primary-btn {
   font-family: var(--font-family);
   font-weight: bold;
   font-size: 20px;
-  color: #02152c;
+  color: var(--dark-text-color);
   background: var(--cta-color);
   border: 3px solid #000;
   border-radius: 20px 5px 20px 5px;
@@ -1300,11 +1300,17 @@ footer.lgt-sec-bk-color {
   .menu-links a {
     display: block;
     padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgba(0,0,0,.03);
+ background:var(--section-colors);
   }
 
   .menu-links a::after {
     display: none;
   }
+
+  h1.hero-title.white {
+    font-size: 2rem;
+}
 
   .image-libary-text {
     padding: 0 1rem;
