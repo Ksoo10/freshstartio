@@ -119,10 +119,6 @@ section {
   margin: 0 auto;
 }
 
-.hero-container p {
-  animation: fadeIn 0.5s ease-in;
-}
-
 .img-libary-container {
   max-width: 1400px;
   margin: 0 auto;
