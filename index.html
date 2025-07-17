@@ -15,6 +15,20 @@
       sizes="32x32"
       href="FreshStart/freshstartio.svg"
     />
+     <!-- Preload hero image with high priority -->
+  <link rel="preload" 
+        href="FreshStart/mika-baumeister-O91CMFew8mY-unsplash.webp" 
+        as="image" 
+        fetchpriority="high"
+        type="image/webp">
+  
+  <!-- Fallback preload for browsers that don't support WebP -->
+  <link rel="preload" 
+        href="FreshStart/mika-baumeister-O91CMFew8mY-unsplash.jpg" 
+        as="image" 
+        fetchpriority="high"
+        type="image/jpeg"
+        media="(not (type: image/webp))">
   </head>
   <header>
     <div class="business-info-bar">
@@ -112,22 +126,32 @@
   </nav>
   <body>
     <main>
-      <section id="hero-container" class="section-bg">
-        <div class="hero-container">
-          <div>
-            <h1 class="hero-title white">
-              Expert House Painter in Delaware Affordable Excellence for Your Home
-            </h1>
-            <p>
-            Looking for an expert house painter in Delaware? Our team delivers affordable excellence for your home, specializing in both interior and exterior painting across Wilmington, Newark, and Bear. Get a free estimate today and experience the difference quality makes!
-            </p>
-            <div class="btn-wrapper">
-              <a href="tel:+13027234797" class="primary-btn">Free Estimate</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
+<section id="hero-container">
+  <picture class="hero-bg">
+    <source srcset="FreshStart/mika-baumeister-O91CMFew8mY-unsplash.webp" type="image/webp">
+    <img src="FreshStart/mika-baumeister-O91CMFew8mY-unsplash.jpg" 
+         alt="House Paint Colors" 
+         fetchpriority="high"
+         width="1920" 
+         height="1080"
+         loading="eager">
+  </picture>
+  <div class="hero-container">
+    <div>
+      <h1 class="hero-title white">
+        Quality Painting in Delaware That Fits Your Budget
+      </h1>
+      <p>
+        Need a quick refresh? Our team delivers streak-free interior
+        painting and weatherproof exterior coatings in Wilmington, Newark,
+        and Bear - no corners cut. Free estimates!
+      </p>
+      <div class="btn-wrapper">
+        <a href="tel:+3027234797" class="primary-btn">Free Estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
       <section id="service-information">
         <div class="container">
           <div class="service-text">
