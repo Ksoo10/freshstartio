@@ -118,11 +118,6 @@ section {
   box-sizing: border-box;
 }
 
-.hero-container {
-  max-width: 650px;
-  margin: 0 auto;
-}
-
 .img-libary-container {
   max-width: 1400px;
   margin: 0 auto;
@@ -375,7 +370,7 @@ section {
 
 .hero-container {
   /* Your existing container styles */
-  max-width: 1400px;
+  max-width: 750px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
