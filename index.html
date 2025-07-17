@@ -16,19 +16,11 @@
       href="FreshStart/freshstartio.svg"
     />
      <!-- Preload hero image with high priority -->
-  <link rel="preload" 
-        href="FreshStart/mika-baumeister-O91CMFew8mY-unsplash.webp" 
-        as="image" 
-        fetchpriority="high"
-        type="image/webp">
-  
-  <!-- Fallback preload for browsers that don't support WebP -->
-  <link rel="preload" 
+   <link rel="preload" 
         href="FreshStart/mika-baumeister-O91CMFew8mY-unsplash.jpg" 
         as="image" 
         fetchpriority="high"
-        type="image/jpeg"
-        media="(not (type: image/webp))">
+        type="image/jpeg">
   </head>
   <header>
     <div class="business-info-bar">
@@ -127,15 +119,15 @@
   <body>
     <main>
 <section id="hero-container">
-  <picture class="hero-bg">
-    <source srcset="FreshStart/mika-baumeister-O91CMFew8mY-unsplash.webp" type="image/webp">
-    <img src="FreshStart/mika-baumeister-O91CMFew8mY-unsplash.jpg" 
-         alt="House Paint Colors" 
-         fetchpriority="high"
-         width="1920" 
-         height="1080"
-         loading="eager">
-  </picture>
+ <picture class="hero-bg">
+  <!-- Only JPG version -->
+  <img src="FreshStart/mika-baumeister-O91CMFew8mY-unsplash.jpg" 
+       alt="House Painting Color Wheel" 
+       fetchpriority="high"
+       width="1920" 
+       height="1080"
+       loading="eager">
+</picture>
   <div class="hero-container">
     <div>
       <h1 class="hero-title white">
